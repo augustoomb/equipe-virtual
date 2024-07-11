@@ -30,8 +30,6 @@ async function getAgentsByCrewId(idCrew:any) {
 
 export default async function AgentCards({ idCrew }:any) {
 
-    // console.log(idCrew)
-
     const agents = await getAgentsByCrewId(idCrew)
 
     if(agents == null) {
@@ -44,17 +42,19 @@ export default async function AgentCards({ idCrew }:any) {
                 const agent = agents[index] || {};
                 return (
                     <div key={index} className="flex flex-wrap border-2 w-full  border-slate-100 rounded-md p-4">
-                        <div className="flex">
-                            <Avatar className="mr-2">
-                                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                                <AvatarFallback>CN</AvatarFallback>
-                            </Avatar>
-                            <div className="">
-                                <h4 className="text-sm font-semibold">{agent.name_agent ?? "Vazio"}</h4>
-                                <span className="text-xs font-light">{agent.role_agent ?? "Vazio"}</span>
+                        <div className="flex w-full justify-between">
+                            <div className="flex">
+                                <Avatar className="mr-2">
+                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                    <AvatarFallback>CN</AvatarFallback>
+                                </Avatar>
+                                <div className="">
+                                    <h4 className="text-sm font-semibold">{agent.name_agent ?? "Vazio"}</h4>
+                                    <span className="text-xs font-light">{agent.role_agent ?? "Vazio"}</span>
+                                </div>
                             </div>
-                            <div>
-                                <Link href="">                                        
+                            <div className=" ">
+                                <Link className="" href="">                                        
                                     <Ellipsis className="" />
                                 </Link>
                             </div>
