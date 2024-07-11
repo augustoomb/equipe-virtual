@@ -21,7 +21,7 @@ export default function Agents({ params }: { params: { idcrew: string } }) {
                                 <h1 className="text-2xl font-semibold">Agentes</h1>
                             </div>
                             <div className="flex w-full items-center justify-between border-b-2 border-slate-100 py-2 mb-2">
-                                <h2 className="text-sm font-normal text-slate-500">Home da equipe</h2>
+                                <h2 className="text-sm font-normal text-slate-500">Agentes da equipe</h2>
                             </div>
                             <div className="flex w-full items-center justify-end">
                                 <Button>+ Agentes</Button>
