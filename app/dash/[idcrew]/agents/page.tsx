@@ -1,6 +1,6 @@
 import SideNav from "@/app/components/dash/sidenav";
 import { Button } from "@/app/components/ui/button"
-import AgentCards from "./agent-cards";
+import AgentCards from "../../../components/dash/agents/agent-cards";
 
 // export default function Home({ searchParams }: { searchParams: { idcrew: string } }) {
 export default function Agents({ params }: { params: { idcrew: string } }) {
