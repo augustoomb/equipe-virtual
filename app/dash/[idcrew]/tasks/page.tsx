@@ -26,8 +26,8 @@ export default function Tasks({ params }: { params: { idcrew: string } }) {
                             <div className="flex w-full items-center justify-end">
                                 <Button>+ Tarefas</Button>
                             </div>
-                            <div className="flex flex-col w-full max-h-screen justify-center items-center space-y-4 mt-4">
-                                <TaskTable />
+                            <div className="mt-4">
+                                <TaskTable idCrew={ idCrew }/>
                             </div>
                         </div>
                     </div>
