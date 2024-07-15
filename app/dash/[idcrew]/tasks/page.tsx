@@ -1,5 +1,5 @@
 import SideNav from "@/app/components/dash/sidenav";
-import TaskTable from "@/app/components/tasks/task-table";
+import TaskTable from "@/app/components/dash/tasks/task-table";
 import { Button } from "@/app/components/ui/button"
 
 // export default function Home({ searchParams }: { searchParams: { idcrew: string } }) {
