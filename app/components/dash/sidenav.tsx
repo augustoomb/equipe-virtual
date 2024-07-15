@@ -4,14 +4,16 @@ import Logout from "./logout"
 import HomeImg from "@/public/home.svg"
 import HammerImg from "@/public/hammer.svg"
 import LineImg from "@/public/line-chart.svg"
+import UsersImg from "@/public/users.svg"
 import SettingsImg from "@/public/settings.svg"
 
 const baseURL = "/dash"
 
 const arrNavLinks = [
     { "id": 1, "href": "", "srcImage": HomeImg, "alt": "Link da home page do software Equipe Virtual", "text": "Home" },    
-    { "id": 2, "href": "/agents", "srcImage": HammerImg, "alt": "Link da home page do software Equipe Virtual", "text": "Agentes" },
+    { "id": 2, "href": "/agents", "srcImage": UsersImg, "alt": "Link da home page do software Equipe Virtual", "text": "Agentes" },
     { "id": 3, "href": "/tasks", "srcImage": LineImg, "alt": "Link da home page do software Equipe Virtual", "text": "Tarefas" },
+    { "id": 4, "href": "/tools", "srcImage": HammerImg, "alt": "Link da home page do software Equipe Virtual", "text": "Ferramentas" },
     // { "id": 4, "href": "/settings", "srcImage": SettingsImg, "alt": "Link da home page do software Equipe Virtual", "text": "Configurações" },
 ]
 
